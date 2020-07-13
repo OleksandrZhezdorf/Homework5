@@ -1,16 +1,16 @@
-
+/* С разделением функции */
+const random = (min, max) => {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 function run(n) {
-    do {
+    do {randomnumber = random(0,10)
         result = prompt('Try to say the right number from 0 to 10');
-        randomresult = Math.floor(Math.random()*10);
-        console.log(randomresult);
         console.log(result);
-        num1 = Number(result);
-        num2 = Number(randomresult);
-        console.log(randomresult === result);
-    } while (num1 != num2 && num1);
+        console.log(randomnumber);
+    } while (result != randomnumber && result);
     return n;
 }
 const runResult = run("You are right!");
 console.log (runResult);
-
